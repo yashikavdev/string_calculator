@@ -27,9 +27,14 @@ RSpec.describe StringCalculator do
       expect(calc.add("//;\n1;2")).to eq(3)
     end
 
-    it 'returns the exception and numbers if input contains negative' do
+    it 'returns the exception and number if input contains negative' do
       calc = StringCalculator.new
       expect(calc.add("-1, 2")).to eq("negatives not allowed - -1")
+    end
+
+    it 'returns the exception and numbers if input contains negative' do
+      calc = StringCalculator.new
+      expect(calc.add("-1, 2, -3")).to eq("negatives not allowed - -1, -3")
     end
   end
 end
