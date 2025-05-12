@@ -8,6 +8,7 @@ A simple Ruby implementation of the String Calculator Kata, developed using Test
 - Handles numbers separated by commas (`,`) and newlines (`\n`).
 - Supports custom single-character delimiters, e.g., `//;\n1;2`.
 - Raises an exception when negative numbers are included, listing all negatives.
+- Ignore numbers bigger than 1000
 
 ## Getting Started
 
